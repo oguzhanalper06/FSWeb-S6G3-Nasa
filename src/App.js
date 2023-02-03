@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import "./App.css";
 import Header from "./componenets/header";
-import Search from "./componenets/search";
 import Nasa from "./componenets/nasa";
 import { useState, useEffect } from "react";
 
@@ -40,8 +39,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Search changeHandler={changeHandler} tarih={tarih} />
+      <Header changeHandler={changeHandler} tarih={tarih} />
+
       <Nasa data={data} />
     </div>
   );
